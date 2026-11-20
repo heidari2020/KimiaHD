@@ -41,29 +41,7 @@ export default function Experience({ data }) {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-6">
-        <div className="p-6 rounded-2xl bg-white/[0.03] border border-white/10 space-y-3">
-          <h3 className="text-lg font-bold flex items-center gap-2 text-cyan-400">
-            <GraduationCap className="w-5 h-5" /> {data.education.title}
-          </h3>
-          <p className="font-semibold text-white">{data.education.degree}</p>
-          <p className="text-sm text-slate-400">{data.education.uni}</p>
-        </div>
-
-        <div className="p-6 rounded-2xl bg-white/[0.03] border border-white/10 space-y-4">
-          {data.education.languages.map((l) => (
-            <div key={l.name} className="space-y-1.5">
-              <div className="flex justify-between text-sm">
-                <span className="font-medium text-white">{l.name}</span>
-                <span className="text-slate-400">{l.level}</span>
-              </div>
-              <div className="h-2 rounded-full bg-white/10 overflow-hidden">
-                <div className="h-full bg-gradient-to-r from-cyan-400 to-indigo-500 rounded-full" style={{ width: l.percent }} />
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+      
     </section>
   );
 }

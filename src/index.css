@@ -1,11 +1,28 @@
 @import "tailwindcss";
+@custom-variant hover (&:hover);
 
-html {
-  scroll-behavior: smooth;
-  background-color: #070B14;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #050811;
+    color: #f1f5f9;
+  }
 }
 
 .bg-dot-grid {
-  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(56, 189, 248, 0.12) 1px, transparent 1px);
   background-size: 28px 28px;
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: floatSlow 4.5s ease-in-out 1.2s infinite;
 }
