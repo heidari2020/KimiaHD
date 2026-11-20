@@ -50,9 +50,11 @@ A modern, bilingual (**English / German**) interactive resume and portfolio buil
     │   └── Contact.jsx     # Direct email & copy-to-clipboard CTA
     ├── App.jsx             # Main layout & global UX effects
     └── index.css           # Tailwind config & custom animations
+```
 
 
-  🚀 Run Locally
+
+🚀 Run Locally
 Bash
 
 # 1. Clone the repository
